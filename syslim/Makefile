@@ -5,7 +5,7 @@ INC_DIR:= /home/god/linux/common
 LIB_DIR:= /home/god/linux/lib
 
 SRCS:= ${wildcard ${SRC_DIR}/*.c}
-OBJS:= ${patsubst %.c,${OBJ_DIR}/%.o, ${notdir ${SRCS}}}
+OBJS:= ${patsubst %.cc,${OBJ_DIR}/%.o, ${notdir ${SRCS}}}
 
 TARGET=main
 BIN_TARGET=${BIN_DIR}/${TARGET}
